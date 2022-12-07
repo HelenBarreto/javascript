@@ -18,13 +18,25 @@
 <body>
 
 
-
+    <h1>formatando String</h1>
     <script>
     
         var nome = window.prompt('Qual é o sei nome?')  
-        document.write('Olá, ' + nome + ' seu nome tem ' + nome.length + ' letras ' )
+        document.write(`Olá, nome seu ${nome} tem ${nome.lengt} letras`  )
         document.write(`olá ${nome}`)
 
+
+    </script>
+
+    <h2>formatando Number</h2>
+    <script>
+
+        var s = 1555.7
+        window.alert(`O valor é ${s.toString()}`)
+        document.write(`<p>O valor da variavel é ${s}</p>`)
+        document.write(`<p>O valor com duas casas decimais  ${s.toFixed(2)}</p>`)  
+        document.write(`<p>O valor com virgular em vez de ponto ${s.toFixed(2).replace('.',',')}</p>`)
+        document.write(`<p>Transformando o valor em dinheiro (Real) ${s.toLocaleString('pt-br',{style:'currency',currency:'brl'})}</p>`)
 
     </script>
     
