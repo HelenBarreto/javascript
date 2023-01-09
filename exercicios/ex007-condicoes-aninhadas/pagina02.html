@@ -23,7 +23,17 @@
             var hora1 = document.getElementById('horas')
             var res1 = document.getElementById('res')
             var va = Number(horas.value)
-            
+        
+            res1.innerHTML = `são exatamente ${va} horas.   `
+            if ( va < 12){
+                res.innerHTML = 'Boa dia!'
+            } else if (va >= 12 && va <= 18){
+                res.innerHTML = 'Boa tarde!'
+            }
+            else {
+                res.innerHTML = 'Bom noite!'
+            }
+
 
         }
 
