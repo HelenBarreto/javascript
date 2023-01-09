@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indentação</title>
+
+</head>
+<body>
+    
+    
+    <h1>Voce pode votar?</h1>
+    <p>Qual a sua idade? <input type="number" name="ianos" id="anos"></p>
+    <input type="submit" value="avaliar" onclick="clicar()">
+    <p id="res"></p>
+
+
+
+
+
+    <script>
+
+        function clicar() {
+            var ano1 = document.getElementById('anos')
+            var res1 = document.getElementById('res')
+            var va = Number(anos.value)
+            res1.innerHTML = `<p>Você tem ${va} anos.</p>`
+            if (va < 16){res1.innerHTML += 'não vota!'}
+            else if (va < 18 || va > 70){res1.innerHTML += 'voto opcional'}
+            else {res1.innerHTML += 'voto obrigatorio!'}
+            
+        }
+
+
+    </script>
+</body>
+</html>
