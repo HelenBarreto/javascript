@@ -3,23 +3,28 @@
 body, html{
     margin: 0px;
     padding: 0px;
-    font: normal 19px arial;
-    background-color: rgb(88, 124, 148);
+    
+    background-color:#e1bf78;
 }
 
 header h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
     color: white;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace
-
+    
+    
 }
 
 main{
+    
     background-color: white;
     height: 60vh;
     width: 50vw;
     margin: auto;
     border-radius: 10px;
+
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.421);
     
       
 
@@ -27,22 +32,26 @@ main{
 main section#horario{
     color: black;
     text-align: center;
-    font: normal 24px Arial, Helvetica, sans-serif;
-   
+    font: bold 24px Arial, Helvetica, sans-serif;
+    padding-top: 15px;
 
 }
+main{
+    position: relative;
+}
 
-main p{
+
+main img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    
 }
 
-main section#imagens{
-     
-}
 
 footer{
     text-align: center;
