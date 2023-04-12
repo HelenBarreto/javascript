@@ -7,7 +7,7 @@ while ( c <= 6){
 
 }
 
-var b = 3
+var b = 10
 do{
     console.log(`passo ${b}`)
     b++
@@ -16,6 +16,14 @@ do{
 
 
 
-for(var f = 7; f >= 10; f++){
-    console.log('f')
+for (d = 14; d <= 19; d++){
+    console.log(`d é igual a ${d}`)
+
+    if(d == 17){
+        console.log('fim')
+    }else if(d == 18){
+        console.log(`depois do fim `
+        )
+    }
+
 }
