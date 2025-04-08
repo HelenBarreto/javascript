@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+    
+    background-color:#e1bf78;
+}
+
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    
+    
+}
+
+main{
+    
+    background-color: white;
+    height: 60vh;
+    width: 50vw;
+    margin: auto;
+    border-radius: 10px;
+
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.421);
+    
+      
+
+}
+main section#horario{
+    color: black;
+    text-align: center;
+    font: bold 24px Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+
+}
+main{
+    position: relative;
+}
+
+
+main img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+footer{
+    text-align: center;
+}

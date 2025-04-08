@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condições</title>
+</head>
+<body>
+    <h1>Nacionalidade!</h1>
+
+
+    <p>Qual é o seu pais?  
+        <input type="text" name="ipais" id="pais">
+        <input type="submit" value="enviar" onclick="clicar()">
+    </p>
+    
+    <div id="res"> Resposta: </div>
+
+    <h1>Velocidade!</h1>
+    <p>Qual a sua velocidadde? 
+        <input type="number" name="ivelo" id="velo">
+        <input type="submit" value="calcular" onclick="apertar()">
+    </p>
+        <p id="resu">Resposta:</p>
+
+
+
+        <script>
+            
+            function clicar(){
+                var pai = document.getElementById('pais')
+                var res = document.getElementById('res')  
+                if (pai == brasil){res.innerHTML = '<p>então você é Brasileiro(a)!</p>'}
+                else {res.innerHTML = '<p>Resposta: Então você é Estrangeiro(a)!</p>'}
+                res.innerHTML += `Espero ter ajudado!` 
+                
+                }
+
+            function apertar(){
+                var velo = document.getElementById('velo')
+                var resu = document.getElementById('resu')
+                var va = Number(velo.value)
+                
+                resu.innerHTML = ` Sua velocidade atual é ${va}Km/h.`
+                if(va > 60){resu.innerHTML += ` Você está sendo multado!` }
+                resu.innerHTML += `<p>Dirija com cuidado!</p>`
+            }
+
+
+        </script>
+
+
+    
+
+    
+    
+</body>
+</html>
